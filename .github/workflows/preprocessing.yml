@@ -25,4 +25,4 @@ jobs:
 
       - name: Run preprocessing
         run: |
-          python preprocessing.py
+          python preprocessing/preprocessing.py
