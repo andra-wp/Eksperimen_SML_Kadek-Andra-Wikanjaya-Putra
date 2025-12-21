@@ -41,7 +41,7 @@ jobs:
           git add **/*.csv
 
           # commit hanya jika ada perubahan
-          git diff --cached --quiet || git commit -m "Update preprocessing dataset (CI)"
+          git commit -m "Update preprocessing dataset (CI)"
 
           git push
 
