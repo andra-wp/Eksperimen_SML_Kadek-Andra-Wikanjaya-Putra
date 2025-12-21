@@ -24,7 +24,7 @@ def preprocessing(df, target_col, output_path):
 if __name__ == "__main__":
     BASE_DIR = Path(__file__).resolve().parent
     DATA_PATH = BASE_DIR.parent / "diabetes_raw" / "diabetes.csv"
-    OUTPUT_PATH = BASE_DIR.parent / "diabetes_preprocessing.csv"
+    OUTPUT_PATH = BASE_DIR.parent / "preprocessing" / "diabetes_preprocessing.csv"
 
     df = pd.read_csv(DATA_PATH)
 
