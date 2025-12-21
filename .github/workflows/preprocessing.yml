@@ -33,3 +33,15 @@ jobs:
           name: preprocessing-dataset
           path: "**/*.csv"
 
+      - name: Commit and push preprocessing dataset
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add **/*.csv
+
+          # commit hanya jika ada perubahan
+          git diff --cached --quiet || git commit -m "Update preprocessing dataset (CI)"
+
+          git push
+
