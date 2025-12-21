@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-def preprocessing(df, output_path="diabetes_preprocessing.csv"):
+def preprocessing(df, output_path="data/diabetes_preprocessing.csv"):
     scaler = StandardScaler()
     df_scaled = scaler.fit_transform(df)
 
