@@ -42,7 +42,7 @@ jobs:
 
       - name: Clone workflow-ci repository
         run: |
-          git clone https://x-access-token:${{ secrets.TARGET_REPO_TOKEN }}@github.com/USERNAME/workflow-ci.git workflow-ci
+          git clone https://x-access-token:${{ secrets.TARGET_REPO_TOKEN }}@github.com/andra-wp/workflow-ci.git workflow-ci
 
       - name: Copy preprocessing output to workflow-ci
         run: |
